@@ -25,8 +25,9 @@ def generatePassword()
   return rand(36**10).to_s(36)
 end
 
-directory "/storage" do
+directory "/storage/couchpotato" do
   owner 'couchpotato'
   group 'couchpotato'
+  recursive true
   action :create
 end

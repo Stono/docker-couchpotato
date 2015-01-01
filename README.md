@@ -20,4 +20,13 @@ sudo docker run -d && \
   -p "5050:5050" stono/nzbget
 ```
 
-All config / data gets written to /storage/couchpotato
+## Storage
+All config / data gets written to /storage/nzbget on the first "fig up", so if you mount in that volume to somewhere on your system, all your configuration will be preserved through docker container updates.
+
+You could mount in your own, already existing config directory if you like.
+
+## Info 
+This is part of a set, all based of the same images, all desgined to eventually piece together.
+  - [stono/sonarr](https://github.com/Stono/docker-sonarr) Sonarr in a Docker container
+  - [stono/nzbget](https://github.com/Stono/docker-nzbget) NzbGet in a Docker container
+  - [stono/couchpotato](https://github.com/Stono/docker-couchpotato) Couchpotato in a docker container

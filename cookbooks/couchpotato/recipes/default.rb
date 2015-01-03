@@ -26,8 +26,8 @@ def generatePassword()
 end
 
 directory "/storage/couchpotato" do
-  owner 'couchpotato'
-  group 'couchpotato'
+  owner 'hpess'
+  group 'hpess'
   recursive true
   action :create
 end

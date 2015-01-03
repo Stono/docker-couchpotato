@@ -6,11 +6,8 @@ RUN yum -y install git-core && \
     yum -y clean all
 
 RUN cd /opt && \
-    git clone --depth=1 https://github.com/RuudBurger/CouchPotatoServer.git
-
-RUN useradd couchpotato
-
-RUN chown -R couchpotato:couchpotato /opt/CouchPotatoServer
+    git clone --depth=1 https://github.com/RuudBurger/CouchPotatoServer.git && \
+    chown -R hpess:hpess /opt/CouchPotatoServer
 
 EXPOSE 5050
 

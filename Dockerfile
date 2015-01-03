@@ -7,7 +7,7 @@ RUN yum -y install git-core && \
 
 RUN cd /opt && \
     git clone --depth=1 https://github.com/RuudBurger/CouchPotatoServer.git && \
-    chown -R hpess:hpess /opt/CouchPotatoServer
+    chown -R docker:docker /opt/CouchPotatoServer
 
 EXPOSE 5050
 

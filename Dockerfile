@@ -16,3 +16,4 @@ ENV chef_run_list couchpotato
 
 COPY services/* /etc/supervisord.d/
 COPY cookbooks/ /chef/cookbooks/
+COPY preboot/* /preboot/ 
